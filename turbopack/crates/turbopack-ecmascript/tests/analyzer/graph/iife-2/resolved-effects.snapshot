@@ -1,0 +1,59 @@
+0 -> 2 free var = FreeVar(Object)
+
+0 -> 3 member call = Object*0*["keys"]({"wrapper": {"data": {"key": {}}}})
+- *0* Object: The global Object variable
+
+0 -> 7 free var = FreeVar(console)
+
+0 -> 8 conditional = ""
+
+0 -> 9 member call = ???*0*["debug"]("####", "", false)
+- *0* FreeVar(console)
+  ⚠️  unknown global
+  ⚠️  This value might have side effects
+
+0 -> 12 conditional = ""
+
+0 -> 14 call = ???*0*(({"data": {"key": {}}} | ???*1*), ???*6*, (???*10* | {}){truthy})
+- *0* _
+  ⚠️  no value of this variable analysed
+- *1* {}[???*2*]
+  ⚠️  unknown object prototype methods or values
+  ⚠️  This value might have side effects
+- *2* ???*3*[i]
+  ⚠️  unknown object
+  ⚠️  This value might have side effects
+- *3* ???*4*({"wrapper": {"data": {"key": {}}}})
+  ⚠️  unknown callee
+  ⚠️  This value might have side effects
+- *4* Object*5*["keys"]
+  ⚠️  unsupported property on global Object
+  ⚠️  This value might have side effects
+- *5* Object: The global Object variable
+- *6* ???*7*[i]
+  ⚠️  unknown object
+  ⚠️  This value might have side effects
+- *7* ???*8*({"wrapper": {"data": {"key": {}}}})
+  ⚠️  unknown callee
+  ⚠️  This value might have side effects
+- *8* Object*9*["keys"]
+  ⚠️  unsupported property on global Object
+  ⚠️  This value might have side effects
+- *9* Object: The global Object variable
+- *10* {}[???*11*]
+  ⚠️  unknown object prototype methods or values
+  ⚠️  This value might have side effects
+- *11* ???*12*[i]
+  ⚠️  unknown object
+  ⚠️  This value might have side effects
+- *12* ???*13*({"wrapper": {"data": {"key": {}}}})
+  ⚠️  unknown callee
+  ⚠️  This value might have side effects
+- *13* Object*14*["keys"]
+  ⚠️  unsupported property on global Object
+  ⚠️  This value might have side effects
+- *14* Object: The global Object variable
+
+0 -> 15 unreachable = ???*0*
+- *0* unreachable
+  ⚠️  This value might have side effects

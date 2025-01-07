@@ -1,0 +1,145 @@
+[
+    (
+        "i",
+        Alternatives {
+            total_nodes: 3,
+            values: [
+                Constant(
+                    Num(
+                        ConstantNumber(
+                            0.0,
+                        ),
+                    ),
+                ),
+                Unknown {
+                    original_value: None,
+                    reason: "updated with update expression",
+                    has_side_effects: true,
+                },
+            ],
+            logical_property: None,
+        },
+    ),
+    (
+        "key",
+        Member(
+            3,
+            Variable(
+                (
+                    "keys",
+                    #4,
+                ),
+            ),
+            Variable(
+                (
+                    "i",
+                    #4,
+                ),
+            ),
+        ),
+    ),
+    (
+        "keys",
+        MemberCall(
+            4,
+            FreeVar(
+                "Object",
+            ),
+            Constant(
+                Str(
+                    Atom(
+                        "keys",
+                    ),
+                ),
+            ),
+            [
+                Variable(
+                    (
+                        "namespace",
+                        #4,
+                    ),
+                ),
+            ],
+        ),
+    ),
+    (
+        "namespace",
+        Object {
+            total_nodes: 7,
+            parts: [
+                KeyValue(
+                    Constant(
+                        Str(
+                            Atom(
+                                "wrapper",
+                            ),
+                        ),
+                    ),
+                    Object {
+                        total_nodes: 5,
+                        parts: [
+                            KeyValue(
+                                Constant(
+                                    Str(
+                                        Atom(
+                                            "data",
+                                        ),
+                                    ),
+                                ),
+                                Object {
+                                    total_nodes: 3,
+                                    parts: [
+                                        KeyValue(
+                                            Constant(
+                                                Str(
+                                                    Atom(
+                                                        "key",
+                                                    ),
+                                                ),
+                                            ),
+                                            Object {
+                                                total_nodes: 1,
+                                                parts: [],
+                                                mutable: true,
+                                            },
+                                        ),
+                                    ],
+                                    mutable: true,
+                                },
+                            ),
+                        ],
+                        mutable: true,
+                    },
+                ),
+            ],
+            mutable: true,
+        },
+    ),
+    (
+        "parent",
+        Variable(
+            (
+                "root",
+                #2,
+            ),
+        ),
+    ),
+    (
+        "path",
+        Constant(
+            Str(
+                Word(
+                    "",
+                ),
+            ),
+        ),
+    ),
+    (
+        "root",
+        Object {
+            total_nodes: 1,
+            parts: [],
+            mutable: true,
+        },
+    ),
+]
